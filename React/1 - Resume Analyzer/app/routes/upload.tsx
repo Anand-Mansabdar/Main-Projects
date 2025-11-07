@@ -45,7 +45,8 @@ const upload = () => {
     setStatusText("Uploadiing the image...");
     const uploadedImage = await fs.upload([imageFile.file]);
 
-    if (!uploadedImage) return setStatusText("Error: Failed to upload image");
+    if (!uploadedImage) 
+      return setStatusText("Error: Failed to upload image");
 
     setStatusText("Preparing data ...");
 
